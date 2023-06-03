@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\person;
+use App\Models\donate;
 use Illuminate\Http\Request;
 
-class PersonController extends Controller
+class DonateController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class PersonController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\person  $person
+     * @param  \App\Models\donate  $donate
      * @return \Illuminate\Http\Response
      */
-    public function show(person $person)
+    public function show(donate $donate)
     {
         //
     }
@@ -52,10 +52,10 @@ class PersonController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\person  $person
+     * @param  \App\Models\donate  $donate
      * @return \Illuminate\Http\Response
      */
-    public function edit(person $person)
+    public function edit(donate $donate)
     {
         //
     }
@@ -64,10 +64,10 @@ class PersonController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\person  $person
+     * @param  \App\Models\donate  $donate
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, person $person)
+    public function update(Request $request, donate $donate)
     {
         //
     }
@@ -75,10 +75,10 @@ class PersonController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\person  $person
+     * @param  \App\Models\donate  $donate
      * @return \Illuminate\Http\Response
      */
-    public function destroy(person $person)
+    public function destroy(donate $donate)
     {
         //
     }

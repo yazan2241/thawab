@@ -5,15 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Donation extends Model
+class person extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'userId',
-        'donorId',
         'name',
-        'ammount',
-        'donationType',
-        'type'
+        'phone_number'.
+        'email',
+        'password',
     ];
 }

@@ -8,26 +8,28 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
+     *
+     * @return void
      */
-    public function up(): void
+    public function up()
     {
-        Schema::create('donations', function (Blueprint $table) {
+        Schema::create('people', function (Blueprint $table) {
             $table->id();
-            $table->integer('userId');
-            $table->integer('donorId');
             $table->string('name');
-            $table->integer('ammount');
-            $table->integer('donationType');
-            $table->integer('type');
+            $table->string('phone_number');
+            $table->string('email');
+            $table->string('password');
             $table->timestamps();
         });
     }
 
     /**
      * Reverse the migrations.
+     *
+     * @return void
      */
-    public function down(): void
+    public function down()
     {
-        Schema::dropIfExists('donations');
+        Schema::dropIfExists('people');
     }
 };
